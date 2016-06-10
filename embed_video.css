@@ -1,0 +1,19 @@
+#video {
+	position: relative;
+	display: inline-block;
+}
+
+#link-image {
+	z-index: 9;
+}
+
+#play-button {
+	background: url('images/youtube_button.png') center center no-repeat;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 139px;
+	height: 97px;
+	margin: -50px 0 0 -70px;
+	z-index: 10;
+}
