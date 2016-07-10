@@ -20,11 +20,10 @@ intended.
 
 == Installation ==
 
-Installing "360-YouTube-Embed" can be done either by searching for "YouTube-360-Embed" via the "Plugins > Add New" screen in your WordPress dashboard, or by using the following steps:
-
-1. Download the plugin via WordPress.org
-1. Upload the ZIP file through the 'Plugins > Add New > Upload' screen in your WordPress dashboard
-1. Activate the plugin through the 'Plugins' menu in WordPress
+This plugin is not available on WordPress.org, so you'll have to manually install.
+Simply create a zip of the entire content of the repository (including the
+containing directory: zip -r youtube-360-embed.zip youtube-360-embed), and upload
+that to your wordpress installation via the install new plugin functionality.
 
 == Screenshots ==
 
@@ -41,7 +40,8 @@ To embed a video, add (in text mode) something like the following html:
 <div id="video" youtube_id="mUKHOnN8vQ8"></div>
 
 The thumbnail is automatically retrieved from youtube, but can be overridden by
-adding an 'img' attribute to the div tag.
+adding an 'img' attribute to the div tag pointing to the url of the image you
+want to use.
 
 == Changelog ==
 
