@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: YouTube-360-Embed
- * Version: 1.0
+ * Version: 1.1
  * Plugin URI: http://github.com/wouterla/YouTube-360-Embed
  * Description: Plugin to easily embed youtube 360 video's.
  * Author: Wouter Lagerweij
