@@ -4,8 +4,19 @@ window.isMobileOrTablet = function() {
   return check;
 }
 
-window.addVideo = function() {
-  var container = document.getElementById("video");
+window.addVideos = function() {
+  // If ID is set, just do the one video
+  if (document.getElementById("video")) {
+    addVideo(document.getElementById("video"));
+  }
+  // if not, let's find all video's by classname
+  var containers = document.getElementsByClassName("360video");
+  for (var i = 0; i < containers.length; i++) {
+      addVideo(containers[i]);
+  }
+}
+
+window.addVideo = function(container) {
   var youtube_id = container.getAttribute("youtube_id");
   var image_url;
 
@@ -62,5 +73,5 @@ window.createVideoLink = function(youtube_id, imgUrl) {
 }
 
 window.onload = function() {
-  window.addVideo();
+  window.addVideos();
 }
