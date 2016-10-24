@@ -3,11 +3,20 @@
 	display: inline-block;
 }
 
-#link-image {
+.360video {
+	position: relative;
+	display: inline-block;
+}
+
+.360-container {
+	position:relative;
+}
+
+.link-image {
 	z-index: 9;
 }
 
-#play-button {
+.play-button {
 	background: url('images/youtube_button.png') center center no-repeat;
 	position: absolute;
 	top: 50%;

@@ -56,20 +56,27 @@ window.createVideoLink = function(youtube_id, imgUrl) {
   youtubeLink.setAttribute("href", "https://www.youtube.com/watch?v=" + youtube_id);
   youtubeLink.setAttribute("rel", "attachment");
 
+  var container = document.createElement("div");
+  container.setAttribute("class", "360-container");
+
   var imgTag = document.createElement("img");
-  imgTag.setAttribute("id", "link-image");
   imgTag.setAttribute("src", imgUrl);
   imgTag.setAttribute("width", "100%");
   imgTag.setAttribute("height", "568");
-  imgTag.setAttribute("class", "alignnone size-full");
+  imgTag.setAttribute("class", "link-image alignnone size-full");
 
-  var playButton = document.createElement("div");
-  playButton.setAttribute("id", "play-button");
+  container.appendChild(imgTag);
+  //container.appendChild(createPlayButton());
 
-  youtubeLink.appendChild(imgTag);
-  youtubeLink.appendChild(playButton);
+  youtubeLink.appendChild(container);
 
   return youtubeLink;
+}
+
+window.createPlayButton = function() {
+  var playButton = document.createElement("div");
+  playButton.setAttribute("class", "play-button");
+  return playButton;
 }
 
 window.onload = function() {
